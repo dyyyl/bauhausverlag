@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 62.5%;
+  color: #1a1a1a;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 35vw 4.688rem auto;
+  grid-template-rows: auto 4.688rem 25vh;
+}
+
+section {
+  display: grid;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.214rem;
+  font-size: 2.25rem;
+  writing-mode: sideways-lr;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+
+h2 {
+  margin: 0;
+  font-size: 3.75rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+svg {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 2rem;
+  pointer-events: none;
+  width: 30vh;
+  height: 30vh;
+}
+
+.red {
+  background-color: #e06046;
+  height: 100%;
+}
+
+.horizontal {
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5px;
+}
+
+.container {
+  align-self: center;
+  justify-self: center;
+}
+
+.subtitle {
+  letter-spacing: 0.584rem;
+}
+
+.subheading {
+  font-size: 0.688rem;
+  letter-spacing: 0.013rem;
+}
+
+.float {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 3rem 1rem;
+}
+
+@media (max-width: 670px) {
+  main {
+    grid-template-columns: 40% 4.688rem auto;
+    width: 100vw;
+  }
+
+  svg {
+    margin: 0;
+    width: 80%;
+  }
+
+  image {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    writing-mode: sideways-lr;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .subtitle {
+    letter-spacing: 0.258rem;
+  }
+}
